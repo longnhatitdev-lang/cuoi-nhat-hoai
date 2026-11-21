@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#180208" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thiệp Mời Đám Cưới - Nhật &amp; Hoài" />
+    <meta
+      property="og:description"
+      content="Trân trọng kính mời bạn đến tham dự lễ thành hôn của chúng tôi"
+    />
+    <meta property="og:image" content="./asset/img/aaa.PNG" />
+    <link rel="icon" type="image/x-icon" href="./asset/icon/avata.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>LCLN Wedding — Nhà trai</title>
+  </head>
+
+  <body class="">
+    <div id="lcln-page-loader" class="lcln-page-loader" aria-live="polite" aria-label="Đang tải thiệp" hidden>
+      <div class="lcln-loader-track"><span></span></div>
+      <div class="lcln-loader-chip"><span class="lcln-loader-spinner" aria-hidden="true"></span><span class="lcln-loader-label">Đang chuẩn bị thiệp cưới…</span></div>
+    </div>
+    <script type="application/json" id="lcln-sides">
+{
+  "trai": {
+    "date": "2026-12-28",
+    "time": "10:00",
+    "address": "Sân bóng Nương Hoang (Nương Má) thôn 1, xã Phú Trạch, tỉnh Quảng Trị",
+    "map": "https://www.google.com/maps?cid=13132823084667712980&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=vi&gl=MY&source=embed",
+    "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7593.5716070378285!2d106.41424337288183!3d17.89546654086152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31389bb6b2402871%3A0xb6412903cbab35d4!2zU8OibiBCw7NuZyBOxrDGoW5nIEhvYW5nIChOxrDGoW5nIE3DoSk!5e0!3m2!1svi!2smy!4v1790078146355!5m2!1svi!2smy",
+    "lunar": "( Tức là ngày 12 tháng 12 Âm lịch)"
+  },
+  "gai": {
+    "date": "2026-12-27",
+    "time": "10:00",
+    "address": "Thôn Tùng Lý, xã Hoá Trạch, tỉnh Quảng Trị",
+    "map": "https://www.google.com/maps/search/?api=1&query=Th%C3%B4n%20T%C3%B9ng%20L%C3%BD%2C%20x%C3%A3%20Ho%C3%A1%20Tr%E1%BA%A1ch%2C%20Qu%E1%BA%A3ng%20Tr%E1%BB%8B",
+    "embed": "",
+    "lunar": ""
+  }
+}
+    </script>
+    <nav id="lcln-side-nav" class="lcln-sidenav" aria-label="Chọn nhà">
+      <a href="/nha-trai" data-side="trai">🤵 Nhà trai</a>
+      <a href="/nha-gai" data-side="gai">👰 Nhà gái</a>
+    </nav>
+    <main>
+      <header class="header">
+        <div class="" id="audio_play" data-music-icon="audio.png">
+          <audio
+            id="my_audio"
+            loop=""
+            src="./asset/audio/le-duong.mp3"
+            preload="none"
+          ></audio>
+          <img
+            id="audio_icon"
+            src="./asset/icon/audio.png"
+            alt="icon nhạc"
+          />
+        </div>
+      </header>
+      <section class="intro_thu">
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="lcln-in-flapClip" clipPathUnits="objectBoundingBox"><path d="M 0.04,0 L 0.96,0 C 0.985,0 1,0.015 1,0.04 L 1,0.22 C 1,0.25 0.98,0.27 0.94,0.29 L 0.54,0.51 C 0.52,0.525 0.48,0.525 0.46,0.51 L 0.06,0.29 C 0.02,0.27 0,0.25 0,0.22 L 0,0.04 C 0,0.015 0.015,0 0.04,0 Z"/></clipPath></defs></svg>
+        <div id="lcln-in-screenCurtain"><div class="lcln-in-curtain-half lcln-in-curtain-top" id="lcln-in-curtainTop"></div><div class="lcln-in-curtain-half lcln-in-curtain-bottom"></div><canvas id="lcln-in-sparkleCanvas"></canvas></div>
+        <div id="lcln-in-heartLayer"></div>
+        <div id="lcln-in-weddingIntro">
+          <div class="lcln-in-intro-glow"></div>
+          <div class="lcln-in-ambient-particles" id="lcln-in-ambientParticles"></div>
+          <div class="lcln-in-invitation-flip-wrapper" id="lcln-in-flipWrapper">
+            <div class="lcln-in-card-shadow"></div>
+            <div class="lcln-in-invitation-flipper" id="lcln-in-flipper">
+              <div class="lcln-in-invitation-face lcln-in-invitation-front-side">
+                <img class="lcln-in-dragon-left" src="./asset/img_backgroud/dragon.webp" alt="Rồng vàng" decoding="async">
+                <img class="lcln-in-phoenix-right" src="./asset/img_backgroud/phoenix.webp" alt="Phượng hoàng" decoding="async">
+                <div class="lcln-in-front-content">
+                  <div class="lcln-in-hi-symbol">囍</div>
+                  <div class="lcln-in-couple-header-box">
+                    <span class="lcln-in-couple-names">Nhật</span>
+                    <div class="lcln-in-seal-front">
+                      <svg class="lcln-in-heart-water-icon" viewBox="0 0 100 100">
+                        <defs>
+                          <clipPath id="lcln-in-heartShapeFront"><path d="M50,88.5 C48,88.5 46,87.5 44.5,86 C25,67 12,54 6,44 C0,34 0,24 6.5,15 C13,6 24,2 35,5 C41,7 46.5,10.5 50,15 C53.5,10.5 59,7 65,5 C76,2 87,6 93.5,15 C100,24 100,34 94,44 C88,54 75,67 55.5,86 C54,87.5 52,88.5 50,88.5 Z"/></clipPath>
+                          <linearGradient id="lcln-in-waterGradFront" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#ff174f"/><stop offset="60%" stop-color="#ff6584"/><stop offset="100%" stop-color="#ffffff"/></linearGradient>
+                        </defs>
+                        <path d="M50,88.5 C48,88.5 46,87.5 44.5,86 C25,67 12,54 6,44 C0,34 0,24 6.5,15 C13,6 24,2 35,5 C41,7 46.5,10.5 50,15 C53.5,10.5 59,7 65,5 C76,2 87,6 93.5,15 C100,24 100,34 94,44 C88,54 75,67 55.5,86 C54,87.5 52,88.5 50,88.5 Z" fill="rgba(0,0,0,0.3)" stroke="#f8d6a3" stroke-width="3"/>
+                        <g clip-path="url(#lcln-in-heartShapeFront)"><g id="lcln-in-waterGroupFront" class="lcln-in-waterGroupFront"><path class="lcln-in-wave-path" d="M -80,0 Q -70,-6 -60,0 Q -50,6 -40,0 Q -30,-6 -20,0 Q -10,6 0,0 Q 10,-6 20,0 Q 30,6 40,0 Q 50,-6 60,0 Q 70,6 80,0 Q 90,-6 100,0 Q 110,6 120,0 Q 130,-6 140,0 Q 150,6 160,0 Q 170,-6 180,0 Q 190,6 200,0 L 200,120 L -80,120 Z" fill="url(#lcln-in-waterGradFront)"/></g></g>
+                      </svg>
+                    </div>
+                    <span class="lcln-in-couple-names">Hoài</span>
+                  </div>
+                  <div class="lcln-in-couple-divider"></div>
+                  <div class="lcln-in-invitation-msg">Kính mời quý khách đến dự tiệc cưới<br>của gia đình chúng tôi</div>
+                </div>
+                <div class="lcln-in-front-tap-hint">Nhấn giữ 3 giây để mở thiệp</div>
+                <div class="lcln-in-hold-glow" id="lcln-in-holdGlow"></div>
+              </div>
+              <div class="lcln-in-invitation-face lcln-in-invitation-back-side">
+                <div class="lcln-in-invitation" id="lcln-in-invitation">
+                  <div class="lcln-in-envelope-back"></div>
+                  <div class="lcln-in-inside-card" id="lcln-in-insideCard">
+                    <img class="lcln-in-avatar" id="lcln-in-avatarImg" src="./asset/img/mau13.webp" alt="" decoding="async">
+                    <div class="lcln-in-card-message">Rất vinh hạnh được đón chào quý khách<br>đến với lễ cưới của chúng tôi</div>
+                    <div class="lcln-in-card-line"></div>
+                    <div class="lcln-in-card-choose">Chọn thiệp mời để xem chi tiết</div>
+                    <div class="lcln-in-side-btns">
+                      <button type="button" class="lcln-in-side-btn" data-side="trai">🤵 Nhà trai</button>
+                      <button type="button" class="lcln-in-side-btn" data-side="gai">👰 Nhà gái</button>
+                    </div>
+                  </div>
+                  <div class="lcln-in-envelope-front"></div>
+                  <div class="lcln-in-flap"></div>
+                  <div class="lcln-in-seal-back"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#f8d6a3" d="M50,88.5 C48,88.5 46,87.5 44.5,86 C25,67 12,54 6,44 C0,34 0,24 6.5,15 C13,6 24,2 35,5 C41,7 46.5,10.5 50,15 C53.5,10.5 59,7 65,5 C76,2 87,6 93.5,15 C100,24 100,34 94,44 C88,54 75,67 55.5,86 C54,87.5 52,88.5 50,88.5 Z"/></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content_one">
+        <div class="top-baner">
+          <img
+            class="img_benner"
+            src="./asset/img_backgroud/IMG_3758.WEBP"
+            alt="ảnh bìa"
+          />
+          <img
+            class="img_benner-may float-swing"
+            src="./asset/img_backgroud/cloud1.webp"
+            alt=""
+          />
+          <img
+            class="img_benner-may-1 float-swing"
+            src="./asset/img_backgroud/cloud2.webp"
+            alt=""
+          />
+          <img
+            class="img_benner-hi"
+            src="./asset/icon/double-happiness.webp"
+            alt=""
+          />
+        </div>
+        <div class="baner_avt">
+          <img
+            class="img_khung"
+            src="./asset/img_backgroud/frame-avatar.webp"
+            alt=""
+          />
+          <img class="img_avt" src="./asset/img/aaa.PNG" alt="" />
+        </div>
+        <div class="baner_bg">
+          <img
+            src="./asset/img_backgroud/dragon.webp"
+            alt=""
+            class="baner_bg-right float-swing"
+          />
+          <img
+            src="./asset/img_backgroud/phoenix.webp"
+            alt=""
+            class="baner_bg-left float-swing"
+          />
+        </div>
+      </section>
+
+      <section class="section_two">
+        <div class="container_content-bg">
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/dragon2.webp"
+            alt=""
+            class="bg_right float-swing"
+          />
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/phoenix2.webp"
+            alt=""
+            class="bg_left float-swing"
+          />
+        </div>
+        <div class="container_bg-sml">
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/cloud3.webp"
+            alt=""
+            class="bg-sml_1 float-swing"
+          />
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/cloud2.webp"
+            alt=""
+            class="bg-sml_2 float-swing"
+          />
+        </div>
+        <div class="headig_text">
+          <h1 class="title-big"><span>THIỆP MỜI</span></h1>
+          <p>I N V I T A T I O N</p>
+        </div>
+        <p class="text_message">
+          "Hạnh phúc không chỉ là tìm một người hoàn hảo, mà là tìm được người
+          cùng mình xây dựng một cuộc đời trọn vẹn" "Một ngày đặc biệt, một lời
+          hẹn ước, một hành trình bắt đầu"
+        </p>
+        <h4 class="titel_thong-bao">
+          TRÂN TRỌNG BÁO TIN <br />LỄ THÀNH HÔN CỦA CHÚNG TÔI
+        </h4>
+        <div class="content_hai-nha">
+          <div class="content_cha-me-big">
+            <div class="content_cha-me">
+              <div class="item_cha-me">
+                <span>Nhà trai</span>
+                <span class="item_name">Lê Văn Sỹ</span>
+                <span class="item_name">Chu Thị Minh</span>
+                <span>Thôn 1,xã Phú Trạch, tỉnh Quảng Trị</span>
+              </div>
+              <div class="item_cha-me">
+                <span>Nhà gái</span>
+                <span class="item_name">Nguyễn Văn Huệ</span>
+                <span class="item_name">Nguyễn Thị Hồng</span>
+                <span>Thôn Tùng Lý, xã Hoá Trạch, tỉnh Quảng Trị</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_dau-re">
+            <div class="content_item">
+              <img decoding="async" loading="lazy" src="./asset/img/mau1.webp" alt="avt rễ" class="avt" />
+              <div class="item-text">Trưởng Nam</div>
+              <h3>Lê Chu Long Nhật</h3>
+            </div>
+            <div class="icon_hi">
+              <img decoding="async" loading="lazy" src="./asset/icon/double-happiness.webp" alt="" />
+            </div>
+            <div class="content_item">
+              <img decoding="async" loading="lazy" src="./asset/img/mau13.webp" alt="avt dâu" class="avt" />
+              <div class="item-text">Út Nữ</div>
+              <h3>Nguyễn Thị Hoài</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_three">
+        <div class="gallery-grid" data-lightbox="">
+          <div class="gallery-grid__item">
+            <img decoding="async" loading="lazy"
+              class="gallery-grid__image"
+              src="./asset/img/mau1.webp"
+              alt="Ảnh Gallery 1"
+            />
+          </div>
+          <div class="gallery-grid__item">
+            <img decoding="async" loading="lazy"
+              class="gallery-grid__image"
+              src="./asset/img/mau2.webp"
+              alt="Ảnh Gallery 2"
+            />
+          </div>
+          <div class="gallery-grid__item">
+            <img decoding="async" loading="lazy"
+              class="gallery-grid__image"
+              src="./asset/img/mau13.webp"
+              alt="Ảnh Gallery 3"
+            />
+          </div>
+        </div>
+        <p class="text_message">
+          " Hôm nay kết nghĩa tơ hồng <br />
+          Trăm năm tình nghĩa mặn nồng từ đây <br />
+          Cùng nhau chung một mái nhà <br />
+          Vượt qua giông bão thiết tha nghĩa tình "
+        </p>
+      </section>
+      <section class="section_four">
+        <div class="container_content-bg">
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/dragon2.webp"
+            alt=""
+            class="bg_right float-swing"
+          />
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/phoenix2.webp"
+            alt=""
+            class="bg_left float-swing"
+          />
+        </div>
+        <h2 class="title-big"><span>Thông tin tiệc cưới</span></h2>
+        <div class="content_time-date">
+          <div class="date-top">
+            <p>
+              LỄ THÀNH HÔN ĐƯỢC CỬ HÀNH TẠI <br />
+              TƯ GIA
+            </p>
+            <div class="thu-gio">
+              <span>thứ hai</span>
+              <span>10 giờ 00</span>
+            </div>
+            <div class="ngay">
+              <span>28</span>
+              <div class="thang">
+                <span>Tháng 12</span>
+                <span>2026</span>
+              </div>
+            </div>
+            <p>( Tức là ngày 12 tháng 12 Âm lịch)</p>
+          </div>
+        </div>
+        <!-- Khung Đếm Ngược Ngày Cưới -->
+        <div class="countdown-card" data-wedding-date="2026-12-28T08:00">
+          <h3 class="countdown-title">Đếm Ngược Ngày Trọng Đại</h3>
+          <div class="countdown-timer">
+            <div class="time-box">
+              <span id="days">84</span>
+              <span class="time-label">Ngày</span>
+            </div>
+            <div class="time-box">
+              <span id="hours">22</span>
+              <span class="time-label">Giờ</span>
+            </div>
+            <div class="time-box">
+              <span id="minutes">41</span>
+              <span class="time-label">Phút</span>
+            </div>
+            <div class="time-box">
+              <span id="seconds">26</span>
+              <span class="time-label">Giây</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="calendar-card"
+          data-month="02"
+          data-year="2027"
+          data-wedding-day="01"
+        >
+          <!-- Tiêu đề Tháng và Năm -->
+          <div class="calendar-header">
+            <span class="month">Tháng 2</span>
+            <span class="year">2027</span>
+          </div>
+
+          <!-- Khung lưới lịch -->
+          <div class="calendar-grid">
+            <span class="day-name wedding-day">Thứ 2</span
+            ><span class="day-name">Thứ 3</span
+            ><span class="day-name">Thứ 4</span
+            ><span class="day-name">Thứ 5</span
+            ><span class="day-name">Thứ 6</span
+            ><span class="day-name">Thứ 7</span><span class="day-name">CN</span
+            ><span class="day-item wedding-day">1</span
+            ><span class="day-item">2</span><span class="day-item">3</span
+            ><span class="day-item">4</span><span class="day-item">5</span
+            ><span class="day-item">6</span><span class="day-item">7</span
+            ><span class="day-item">8</span><span class="day-item">9</span
+            ><span class="day-item">10</span><span class="day-item">11</span
+            ><span class="day-item">12</span><span class="day-item">13</span
+            ><span class="day-item">14</span><span class="day-item">15</span
+            ><span class="day-item">16</span><span class="day-item">17</span
+            ><span class="day-item">18</span><span class="day-item">19</span
+            ><span class="day-item">20</span><span class="day-item">21</span
+            ><span class="day-item">22</span><span class="day-item">23</span
+            ><span class="day-item">24</span><span class="day-item">25</span
+            ><span class="day-item">26</span><span class="day-item">27</span
+            ><span class="day-item">28</span>
+          </div>
+        </div>
+      </section>
+      <section class="section_five">
+        <h2 class="title-big"><span>Tiệc tổ chứ tại</span></h2>
+        <p class="address">
+          📍 Sân bóng Nương Hoang (Nương Má) thôn 1, xã Phú Trạch, tỉnh Quảng
+          Trị
+        </p>
+        <div class="content_map">
+          <iframe
+            class="map_iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7593.5716070378285!2d106.41424337288183!3d17.89546654086152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31389bb6b2402871%3A0xb6412903cbab35d4!2zU8OibiBCw7NuZyBOxrDGoW5nIEhvYW5nIChOxrDGoW5nIE3DoSk!5e0!3m2!1svi!2smy!4v1790078146355!5m2!1svi!2smy"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="wedding-btn-group">
+          <a
+            href="https://www.google.com/maps?cid=13132823084667712980&amp;g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&amp;hl=vi&amp;gl=MY&amp;source=embed"
+            class="wedding-btn"
+            target="_blank"
+          >
+            <span class="icon">📍</span> Chỉ Đường
+          </a>
+        </div>
+      </section>
+      <section class="section_six">
+        <div class="lcln-card" id="lcln-timeline">
+          <h2 class="lcln-title">Lịch Trình Ngày Cưới</h2>
+          <div class="lcln-timeline">
+            <!-- Mục 1: Đón khách -->
+            <div class="lcln-item">
+              <div class="lcln-left">
+                <div class="lcln-icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="lcln-time">17:00</div>
+              </div>
+              <div class="lcln-dot"></div>
+              <div class="lcln-right">
+                <div class="lcln-event">Đón khách</div>
+              </div>
+            </div>
+            <!-- Mục 2: Khai tiệc -->
+            <div class="lcln-item">
+              <div class="lcln-left">
+                <div class="lcln-icon">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="lcln-time">18:00</div>
+              </div>
+              <div class="lcln-dot"></div>
+              <div class="lcln-right">
+                <div class="lcln-event">Khai tiệc</div>
+              </div>
+            </div>
+            <!-- Mục 3: Nghi thức cưới -->
+            <div class="lcln-item">
+              <div class="lcln-left">
+                <div class="lcln-icon">
+                  <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <div class="lcln-time">18:30</div>
+              </div>
+              <div class="lcln-dot"></div>
+              <div class="lcln-right">
+                <div class="lcln-event">Nghi thức cưới</div>
+              </div>
+            </div>
+            <!-- Mục 4: Cắt bánh & nâng ly -->
+            <div class="lcln-item">
+              <div class="lcln-left">
+                <div class="lcln-icon">
+                  <i class="fa-solid fa-wine-glass"></i>
+                </div>
+                <div class="lcln-time">19:00</div>
+              </div>
+              <div class="lcln-dot"></div>
+              <div class="lcln-right">
+                <div class="lcln-event">Cắt bánh &amp; nâng ly</div>
+              </div>
+            </div>
+            <!-- Mục 5: Kết thúc tiệc -->
+            <div class="lcln-item">
+              <div class="lcln-left">
+                <div class="lcln-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="lcln-time">20:30</div>
+              </div>
+              <div class="lcln-dot"></div>
+              <div class="lcln-right">
+                <div class="lcln-event">Kết thúc tiệc</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="js-open-rsvp" class="wedding-btn--rsvp">
+          XÁC NHẬN THAM DỰ
+        </button>
+        <p class="rsvp-text">
+          Sự hiện diện của bạn là niềm vinh hạnh cho gia đình chúng tôi.
+          <br />Xin xác nhận để chúng tôi chuẩn bị chu đáo nhất
+        </p>
+        <div class="wedding-wall">
+          <div id="js-wall-list" class="wall-list"></div>
+        </div>
+        <div id="js-toast" class="wedding-toast"></div>
+        <div class="wedding-comment-bar">
+          <input
+            id="js-comment-input"
+            class="wedding-input--comment"
+            placeholder="Nhập lời chúc..."
+            style="opacity: 1"
+          />
+          <button id="js-send-live" class="wedding-btn--send">➤</button>
+        </div>
+
+        <div id="js-modal-profile" class="wedding-modal is-hidden">
+          <div class="wedding-modal__box">
+            <button id="js-close-profile" class="wedding-btn--close">x</button>
+            <h3>Bạn là ai nè?</h3>
+            <div class="wedding-form__group">
+              <label>Tên</label
+              ><input
+                id="js-profile-name"
+                class="wedding-form__input"
+                placeholder="Nhập tên"
+              />
+              <p id="js-profile-name-error" class="wedding-form__error">
+                Nhập tên đi 🥺
+              </p>
+            </div>
+            <div class="wedding-form__group">
+              <label>Khách của ai?</label>
+              <div class="wedding-choice-group">
+                <button id="js-profile-groom" class="wedding-choice-btn">
+                  🤵 Nhà trai</button
+                ><button id="js-profile-bride" class="wedding-choice-btn">
+                  👰 Nhà gái
+                </button>
+              </div>
+              <p id="js-profile-side-error" class="wedding-form__error">
+                Chọn phe nhé!
+              </p>
+            </div>
+            <button id="js-save-profile" class="wedding-btn--submit">
+              Xong, vào chúc thôi
+            </button>
+          </div>
+        </div>
+
+        <div id="js-modal-rsvp" class="wedding-modal is-hidden">
+          <div class="wedding-modal__box">
+            <button id="js-close-rsvp" class="wedding-btn--close">x</button>
+            <div id="js-rsvp-content">
+              <h2>Xác nhận tham dự</h2>
+              <p style="margin-bottom: 16px">
+                Sự hiện diện của bạn là niềm vinh hạnh cho gia đình chúng tôi.
+                Xin xác nhận để chúng tôi chuẩn bị chu đáo nhất
+              </p>
+              <div class="wedding-form__group">
+                <label>Nhập tên</label
+                ><input
+                  id="js-rsvp-name"
+                  placeholder="Nhập tên của bạn"
+                  class="wedding-form__input"
+                />
+                <p id="js-rsvp-name-error" class="wedding-form__error">
+                  Nhập tên đi......
+                </p>
+              </div>
+              <div class="wedding-form__group">
+                <label>Khách của ai?</label>
+                <div class="wedding-choice-group">
+                  <button id="js-rsvp-groom" class="wedding-choice-btn">
+                    🤵 Nhà trai</button
+                  ><button id="js-rsvp-bride" class="wedding-choice-btn">
+                    👰 Nhà gái
+                  </button>
+                </div>
+                <p id="js-rsvp-side-error" class="wedding-form__error">
+                  Chọn phe nha!
+                </p>
+              </div>
+              <div class="wedding-form__group">
+                <label>Bạn sẽ đến chứ?</label
+                ><button
+                  id="js-opt-yes"
+                  class="wedding-option-btn wedding-option-btn--yes"
+                >
+                  ✓ Tôi sẽ đến</button
+                ><button
+                  id="js-opt-no"
+                  class="wedding-option-btn wedding-option-btn--no"
+                >
+                  ✕ Không đến được
+                </button>
+                <p id="js-rsvp-status-error" class="wedding-form__error">
+                  Chọn giúp mình nhé!
+                </p>
+              </div>
+              <div id="js-group-qty" class="wedding-form__group is-hidden">
+                <label class="label-soluong"
+                  >Số lượng:
+                  <button type="button" id="js-qty-minus">-</button>
+                  <span id="js-qty-count">1</span>
+                  <button type="button" id="js-qty-plus">+</button></label
+                >
+              </div>
+              <div class="wedding-form__group">
+                <label>Lời nhắn</label
+                ><textarea
+                  placeholder="Nhập lời chúc tới cô dâu, chú rể (sẽ được hiển thị ở danh sách lời chúc)"
+                  id="js-rsvp-msg"
+                  class="wedding-form__input"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button id="js-submit-rsvp" class="wedding-btn--submit">
+                Gửi xác nhận
+              </button>
+            </div>
+            <div
+              id="js-rsvp-success"
+              class="is-hidden"
+              style="text-align: center"
+            >
+              <h3>✅ Đã gửi!</h3>
+              <button id="js-done-rsvp" class="wedding-btn--submit">
+                Đóng
+              </button>
+            </div>
+          </div>
+        </div>
+        <button id="toggleWallBtn">👀 Hiện lời chúc</button>
+        <div class="wedding-widget-wrapper" id="js-wedding-widget">
+          <!-- Nút chính trung tâm -->
+          <button
+            class="widget-main-btn"
+            id="js-widget-toggle"
+            data-widget-item="main"
+            title="Menu"
+          >
+            <i class="fa-solid fa-heart" data-icon></i>
+          </button>
+
+          <!-- CẤP 1 -->
+          <button
+            type="button"
+            class="radial-item item-contact-main"
+            id="js-btn-contact-main"
+            data-widget-item="contact-main"
+            title="Liên hệ"
+          >
+            <i class="fa-solid fa-address-book" data-icon></i>
+            <span class="tooltip">Liên hệ</span>
+          </button>
+
+          <button
+            type="button"
+            class="radial-item item-share-main"
+            id="js-btn-share-main"
+            data-widget-item="share-main"
+            title="Chia sẻ"
+          >
+            <i class="fa-solid fa-share-nodes" data-icon></i>
+            <span class="tooltip">Chia sẻ</span>
+          </button>
+
+          <!-- CẤP 2: NHÁNH LIÊN HỆ -->
+          <a
+            href="tel:0900000000"
+            class="sub-item phone-groom"
+            data-widget-item="phone-groom"
+            data-link="1"
+            title="Gọi chú rể"
+          >
+            <i class="fa-solid fa-phone" data-icon></i>
+            <span class="tooltip">Gọi chú rể</span>
+          </a>
+          <a
+            href="https://m.me/your_profile"
+            target="_blank"
+            class="sub-item msg-groom"
+            data-widget-item="msg-groom"
+            data-link="1"
+            title="Nhắn tin chú rể"
+          >
+            <i class="fa-brands fa-facebook-messenger" data-icon></i>
+            <span class="tooltip">Nhắn chú rể</span>
+          </a>
+
+          <!-- CẤP 2: NHÁNH SHARE -->
+          <button
+            type="button"
+            class="sub-item copy-link"
+            id="js-copy-link"
+            data-widget-item="copy-link"
+            title="Sao chép link"
+          >
+            <i class="fa-regular fa-copy" data-icon></i>
+            <span class="tooltip">Sao chép link</span>
+          </button>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php"
+            target="_blank"
+            class="sub-item facebook"
+            data-widget-item="facebook"
+            data-link="1"
+            title="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f" data-icon></i>
+            <span class="tooltip">Share Facebook</span>
+          </a>
+          <a
+            href="fb-messenger://share"
+            class="sub-item messenger"
+            data-widget-item="messenger"
+            data-link="1"
+            title="Messenger"
+          >
+            <i class="fa-brands fa-facebook-messenger" data-icon></i>
+            <span class="tooltip">Share Messenger</span>
+          </a>
+        </div>
+      </section>
+      <section class="section_seven">
+        <h2 class="title-big title_abum"><span>Album ảnh cưới</span></h2>
+        <div class="wedding" id="weddingSlider">
+          <button id="prev" class="nav-btn prev-btn" aria-label="Previous">
+            ❮
+          </button>
+          <div id="stage" class="stage">
+            <div class="slide left left-2" data-index="0">
+              <img decoding="async" loading="lazy" src="./asset/img/mau1.webp" alt="Slider 1" />
+            </div>
+            <div class="slide left left-1" data-index="1">
+              <img decoding="async" loading="lazy" src="./asset/img/mau13.webp" alt="Slider 2" />
+            </div>
+            <div class="slide active" data-index="2">
+              <img decoding="async" loading="lazy" src="./asset/img/mau2.webp" alt="Slider 3" />
+            </div>
+            <div class="slide right right-1" data-index="3">
+              <img decoding="async" loading="lazy" src="./asset/img/mau13.webp" alt="Slider 4" />
+            </div>
+            <div class="slide right right-2" data-index="4">
+              <img decoding="async" loading="lazy" src="./asset/img/mau1.webp" alt="Slider 5" />
+            </div>
+            <div class="slide right right-3" data-index="5">
+              <img decoding="async" loading="lazy" src="./asset/img/mau2.webp" alt="Slider 6" />
+            </div>
+            <div class="slide left left-3" data-index="6">
+              <img decoding="async" loading="lazy" src="./asset/img/mau13.webp" alt="Slider 7" />
+            </div>
+          </div>
+          <button id="next" class="nav-btn next-btn" aria-label="Next">
+            ❯
+          </button>
+          <div id="sliderDots" class="slider-dots"></div>
+        </div>
+        <div class="lightbox-modal" id="imageViewerModal">
+          <span class="lightbox-modal__close-btn js-lightbox-close" title="Đóng"
+            >×</span
+          >
+
+          <div class="lightbox-modal__container">
+            <button class="lightbox-nav lightbox-prev js-lightbox-prev">
+              ❮
+            </button>
+            <img decoding="async" loading="lazy"
+              src=""
+              alt="Ảnh phóng to"
+              class="lightbox-modal__content js-lightbox-display-img"
+            />
+            <button class="lightbox-nav lightbox-next js-lightbox-next">
+              ❯
+            </button>
+          </div>
+
+          <!-- Số đếm ảnh -->
+          <div class="lightbox-counter js-lightbox-counter">1 / 1</div>
+        </div>
+        <div class="lcln-album-link-wrap" style="text-align:center;margin:28px auto 8px;padding:0 16px;">
+          <a href="/album" class="lcln-album-link" style="display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border:1px solid #c9a66b;border-radius:3px;color:#c9a66b;text-decoration:none;font-size:12px;letter-spacing:.08em;background:rgba(40,8,14,.35);">✧ XEM ALBUM <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+      <section class="section_eight">
+        <div class="container_content-bg">
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/dragon2.webp"
+            alt=""
+            class="bg_right float-swing"
+          />
+          <img decoding="async" loading="lazy"
+            src="./asset/img_backgroud/phoenix2.webp"
+            alt=""
+            class="bg_left float-swing"
+          />
+        </div>
+        <h3 class="title-big"><span>Hộp quà mừng</span></h3>
+        <div class="gift-sec">
+          <div class="envelopes" id="giftBox">
+            <div class="env e1"></div>
+            <div class="env e2"></div>
+          </div>
+          <div class="hint" id="hintId">Nhấn để mở</div>
+        </div>
+
+        <div id="qrModal">
+          <div class="modal">
+            <div class="modal_hed">
+              <h5>Gửi Quà Mừng</h5>
+              <button onclick="closeGift()">×</button>
+            </div>
+            <div class="qr-grid">
+              <div class="qr-card" data-gift="groom">
+                <img decoding="async" loading="lazy"
+                  id="qr1"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&amp;data=MB-RE"
+                />
+                <div>
+                  <b data-gift-role>Chú rể</b><br />
+                  <span data-gift-owner>Le Chu Long Nhat</span><br />
+                  <span id="stk1" data-gift-acc>0123456789</span><br />
+                  <span id="bank1" data-gift-bank>Tp Bank</span>
+                </div>
+                <button onclick="copy('stk1', this)">Copy STK</button
+                ><button class="primary" onclick="dl('qr1', 'chu-re', this)">
+                  Tải Mã QR
+                </button>
+              </div>
+              <div class="qr-card" data-gift="bride">
+                <img decoding="async" loading="lazy"
+                  id="qr2"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&amp;data=VCB-DAU"
+                />
+                <div>
+                  <b data-gift-role>Cô dâu</b><br />
+                  <span data-gift-owner>Nguyen Thi Hoai</span><br />
+                  <span id="stk2" data-gift-acc>9876543210</span><br />
+                  <span id="bank2" data-gift-bank>Tp Bank</span>
+                </div>
+                <button onclick="copy('stk2', this)">Copy STK</button
+                ><button class="primary" onclick="dl('qr2', 'co-dau', this)">
+                  Tải Mã QR
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_nine">
+<div class="lcln-ls-section" id="lcln-ls-love">
+  
+
+  <div class="lcln-ls-head"><h2 class="lcln-ls-title">Chuyện tình yêu</h2></div>
+
+  <div class="lcln-ls-stage" id="lcln-ls-stage">
+    <div class="lcln-ls-orbit" aria-hidden="true"></div>
+    <div class="lcln-ls-glow" aria-hidden="true"></div>
+    <div id="lcln-ls-slides"></div>
+  </div>
+
+  <div class="lcln-ls-controls">
+    <button class="lcln-ls-nav" id="lcln-ls-prev" type="button" aria-label="Ảnh trước"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="lcln-ls-progress" id="lcln-ls-progress"></div>
+    <button class="lcln-ls-nav" id="lcln-ls-next" type="button" aria-label="Ảnh sau"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+
+  <p class="lcln-ls-thanks"><strong>Cảm ơn quý khách đã xem thư mời 💌</strong>Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!</p>
+</div>
+
+<div class="lcln-ls-viewer" id="lcln-ls-viewer" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lcln-ls-close" id="lcln-ls-close" type="button" aria-label="Đóng"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <div class="lcln-ls-v-head">
+    <span class="lcln-ls-chip" id="lcln-ls-v-chip"></span>
+    <h3 class="lcln-ls-v-title" id="lcln-ls-v-title"></h3>
+    <p class="lcln-ls-v-text" id="lcln-ls-v-text"></p>
+  </div>
+  <div class="lcln-ls-v-body" id="lcln-ls-v-body"><img loading="lazy" class="lcln-ls-v-img" id="lcln-ls-v-img" alt="" decoding="async"></div>
+  <div class="lcln-ls-v-bar">
+    <button class="lcln-ls-nav" id="lcln-ls-v-prev" type="button" aria-label="Ảnh trước"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <span class="lcln-ls-v-count" id="lcln-ls-v-count"></span>
+    <button class="lcln-ls-nav" id="lcln-ls-v-next" type="button" aria-label="Ảnh sau"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</div>
+      </section>
+      <footer class="footer">
+        <span class="copy-right">© Designed by LCLN 2026</span>
+      </footer>
+    </main>
+    <canvas id="rainCanvas" width="1231" height="647"></canvas>
+    <script type="application/json" id="lcln-story-data">
+[
+  {
+    "title": "Lần đầu gặp gỡ",
+    "text": "Khoảnh khắc đầu tiên khiến mọi thứ bắt đầu.",
+    "img": "./asset/img/mau1.webp"
+  },
+  {
+    "title": "Minimalist",
+    "text": "Tối giản mà ấm áp, ánh sáng buổi sớm dịu dàng.",
+    "img": "./asset/img/mau13.webp"
+  },
+  {
+    "title": "Lời cầu hôn",
+    "text": "Một lời hứa nhỏ cho hành trình rất dài.",
+    "img": "./asset/img/mau2.webp"
+  },
+  {
+    "title": "Ngày hẹn ước",
+    "text": "Cùng nhau viết tiếp câu chuyện của chúng mình.",
+    "img": "./asset/img/mau1.webp"
+  },
+  {
+    "title": "Về chung một nhà",
+    "text": "Và hạnh phúc bắt đầu từ đây.",
+    "img": "./asset/img/mau13.webp"
+  }
+]
+</script>
+    <script src="/javascript.js" defer=""></script>
+  </body>
+</html>
