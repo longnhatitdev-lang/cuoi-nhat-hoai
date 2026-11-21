@@ -1,0 +1,21 @@
+{
+  "name": "lcln-wedding-nextjs",
+  "version": "2.0.0",
+  "private": true,
+  "description": "LCLN Wedding Invitation — Next.js migration",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check:source": "node --check server.js && node --check pages/_app.js && node --check pages/404.js && node --check pages/api/[...route].js && node --check src/api/admin-login.js && node --check src/admin-session.js && node --check src/vercel-utils.js && node --check src/wall-api.js && node --check src/supabase-content.js && node --check src/admin-api.js && node --check src/access-control.js && node --check src/api/site.js && node --check src/api/admin-html.js && node --check src/api/admin-upload.js && node --check src/api/admin-components.js && node --check src/api/admin-images.js && node --check src/api/wall.js && node --check src/api/telegram.js && node --check src/api/album-images.js && node --check src/api/access.js && node --check src/api/access-page.js && node --check src/api/album-page.js && node --check src/api/admin-access.js && node --check src/api/admin-album.js && node --check src/api/admin-preview-session.js && node --check client/javascript.js && node --check client/album.js && node --check admin/admin.js && node --check admin/album.js",
+    "check:assets": "node scripts/check-assets.js"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}
