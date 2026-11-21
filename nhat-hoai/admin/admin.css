@@ -1,0 +1,70 @@
+html,body{margin:0;height:100%;background:#222;font:14px system-ui,sans-serif}
+#lcln-f{position:fixed;inset:0;width:100%;height:100%;border:0;background:#fff}
+.lcln-login{max-width:420px;margin:10vh auto;padding:28px;background:#fff;border-radius:14px;box-sizing:border-box;width:calc(100% - 24px)}
+.lcln-login input{width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+#lcln-msg{color:#b91c1c}
+.lcln-fab{position:fixed;top:max(10px,env(safe-area-inset-top));z-index:50;border:0;border-radius:10px;padding:10px 14px;font:600 14px system-ui;color:#fff;background:#7a0a0a;box-shadow:0 2px 10px #0006;cursor:pointer}
+#lcln-mb{left:10px;font-size:20px;line-height:1}
+#lcln-sv{right:10px;background:#16a34a}
+#lcln-add{top:auto;bottom:70px;right:10px;background:#2563eb;display:none}
+#lcln-mn{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 48px);left:10px;z-index:50;background:#fff;border-radius:12px;padding:6px;display:none;box-shadow:0 6px 24px #0005;min-width:240px}
+.lcln-it{display:block;padding:12px;border-radius:8px;cursor:pointer;color:#222}
+.lcln-it:hover{background:#f3f4f6}
+#lcln-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#111;color:#fff;padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:none;gap:10px;align-items:center;flex-wrap:wrap}
+#lcln-bar input[type=color]{width:36px;height:30px;border:0;padding:0;background:none}
+#lcln-bar button{padding:6px 10px;border-radius:6px;border:0}
+#lcln-ov{position:fixed;inset:0;z-index:100;background:#0008;display:none;align-items:center;justify-content:center;padding:12px;box-sizing:border-box}
+.lcln-bx{background:#fff;border-radius:14px;width:100%;max-width:520px;max-height:88vh;overflow:auto;padding:14px;color:#222}
+.lcln-hd{display:flex;justify-content:space-between;margin-bottom:10px;font-size:16px}
+#lcln-cx{cursor:pointer;padding:0 6px}
+.lcln-bx input:not([type=file]):not([type=checkbox]),.lcln-bx textarea{width:100%;box-sizing:border-box;padding:10px;margin:6px 0 12px;border:1px solid #ccc;border-radius:8px;font:inherit}
+.lcln-bx label{display:block}
+.lcln-pri,.lcln-bx button{padding:10px 14px;border:0;border-radius:8px;margin:4px 4px 0 0;cursor:pointer;font:600 14px system-ui;background:#e5e7eb}
+.lcln-pri{background:#7a0a0a!important;color:#fff}
+.lcln-login .lcln-pri{width:100%}
+.lcln-tabs button.on{background:#7a0a0a;color:#fff}
+.lcln-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.lcln-th{position:relative;aspect-ratio:1;background:#eee repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 0 0/16px 16px;border-radius:8px;overflow:hidden}
+.lcln-th img{width:100%;height:100%;object-fit:contain;cursor:pointer}
+.lcln-th span{position:absolute;top:3px;right:3px;background:#000b;color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;cursor:pointer}
+#lcln-toast{position:fixed;left:50%;top:70px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:20px;z-index:200;display:none;max-width:80vw;text-align:center}
+#lcln-bar select{padding:6px;border-radius:6px;border:0;max-width:46vw}
+
+.lcln-side-switch{display:flex;gap:8px;margin:8px 0}.lcln-side-switch button{flex:1;border:1px solid #d9b66c;border-radius:10px;padding:9px;background:#fff7e8;color:#6e0a06;font-weight:700;cursor:pointer}.lcln-side-switch button:hover{background:#f4cf7a}
+
+.lcln-side-switch{display:flex;gap:8px;margin:8px 0}.lcln-side-switch button{flex:1;border:1px solid #d9b66c;border-radius:10px;padding:9px;background:#fff7e8;color:#6e0a06;font-weight:700;cursor:pointer}.lcln-side-switch button:hover{background:#f4cf7a}
+
+/* Thư viện giao diện HTML/CSS/JS */
+.lcln-code-form{display:grid;gap:10px}.lcln-code-form label{display:grid;gap:5px;font-size:13px;font-weight:650}.lcln-code-form input,.lcln-code-form textarea{box-sizing:border-box;width:100%;border:1px solid #d1d5db;border-radius:8px;padding:9px;font:13px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;background:#fff;color:#111827}.lcln-code-form textarea{resize:vertical;min-height:74px;tab-size:2}.lcln-code-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.lcln-code-actions button{border:1px solid #d1d5db;border-radius:8px;background:#f8fafc;padding:8px 10px;cursor:pointer;font-weight:600}.lcln-code-actions .lcln-pri{background:#991b1b;color:white;border-color:#991b1b}.lcln-code-warning{font-size:12px;line-height:1.5;color:#92400e;background:#fffbeb;border:1px solid #fde68a;padding:9px;border-radius:8px}.lcln-code-hint{font-size:12px;line-height:1.5;color:#475569}.lcln-component-list{display:grid;gap:10px;margin-top:12px}.lcln-component-card{border:1px solid #e5e7eb;border-radius:10px;padding:12px;background:#fff}.lcln-component-card p{font-size:13px;color:#475569;margin:7px 0}.lcln-component-card small{font-size:11px;color:#64748b}.lcln-component-card .lcln-code-actions button{font-size:12px}
+
+
+/* Loading indicator for upload / image compression in Admin */
+#lcln-toast.is-loading{display:flex;align-items:center;gap:10px;padding:12px 17px;border:1px solid rgba(244,207,122,.45);background:linear-gradient(135deg,#27050c,#781020);box-shadow:0 10px 32px #0004;color:#fff8e8;border-radius:999px}
+#lcln-toast.is-loading:before{content:"";width:15px;height:15px;flex:0 0 15px;border:2px solid #ffffff45;border-top-color:#f4cf7a;border-right-color:#fff3c5;border-radius:50%;animation:lcln-admin-spin .8s linear infinite}
+@keyframes lcln-admin-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#lcln-toast.is-loading:before{animation:none;border-top-color:#f4cf7a}}
+
+
+/* Admin mobile: thanh công cụ dễ chạm và kéo section bằng ngón tay */
+.lcln-fab{min-height:44px;min-width:44px;display:grid;place-items:center;padding:9px 12px}
+.lcln-tb{max-width:calc(100% - 10px);flex-wrap:wrap;gap:4px;touch-action:pan-y}
+.lcln-tb button,.lcln-dh{min-width:36px;min-height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px}
+.lcln-dh{touch-action:none!important;-webkit-user-select:none;user-select:none;cursor:grab}
+.lcln-mobile-dragging{outline:3px dashed #2563eb!important;outline-offset:3px;opacity:.82}
+#lcln-bar{max-height:42vh;overflow:auto;gap:8px}
+#lcln-mn{max-height:calc(100dvh - 100px);overflow:auto;overscroll-behavior:contain}
+.lcln-bx{max-height:calc(100dvh - 24px);padding:clamp(12px,3vw,18px)}
+.lcln-bx input:not([type=file]):not([type=checkbox]),.lcln-bx textarea{font-size:16px;min-height:42px}
+@media(max-width:700px){
+ #lcln-mb{left:8px;top:max(8px,env(safe-area-inset-top))}
+ #lcln-sv{right:8px;top:max(8px,env(safe-area-inset-top))}
+ #lcln-add{right:10px;bottom:calc(14px + env(safe-area-inset-bottom))}
+ #lcln-mn{left:8px;right:8px;min-width:0;width:min(320px,calc(100vw - 16px))}
+ #lcln-bar{padding:9px 10px calc(9px + env(safe-area-inset-bottom));font-size:13px}
+ #lcln-bar select{max-width:42vw}
+ .lcln-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .lcln-th{border-radius:7px}
+ .lcln-login{margin:8vh auto;padding:22px 18px}
+}
+@media(hover:hover) and (pointer:fine){.lcln-tb button:hover,.lcln-fab:hover{filter:brightness(1.12);transform:translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){.lcln-fab,.lcln-tb button{transition:none!important}}
