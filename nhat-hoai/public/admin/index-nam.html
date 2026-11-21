@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi" data-lcln-side="nam">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Quản trị thiệp cưới — Nhà trai</title>
+    <link rel="stylesheet" href="/admin/admin.css" />
+  </head>
+  <body>
+    <section id="lcln-login" class="lcln-login">
+      <h1>Đăng nhập quản trị</h1>
+      <form id="lcln-form">
+        <input id="lcln-pw" type="password" placeholder="Mật khẩu ADMIN_PASSWORD" required />
+        <button class="lcln-pri">Đăng nhập</button>
+      </form>
+      <p id="lcln-msg"></p>
+    </section>
+
+    <div id="lcln-app" hidden>
+      <iframe id="lcln-f" title="Xem trước"></iframe>
+      <button id="lcln-mb" class="lcln-fab" aria-label="Menu">☰</button>
+      <button id="lcln-sv" class="lcln-fab">💾 Lưu thay đổi</button>
+      <button id="lcln-add" class="lcln-fab">＋ Thêm section</button>
+      <div id="lcln-mn">
+        <label class="lcln-it"><input type="checkbox" id="lcln-tg" /> ✏️ Chế độ sửa trực tiếp</label>
+        <div class="lcln-it"><strong>Chọn giao diện cần quản lý</strong><div class="lcln-side-switch"><button type="button" id="lcln-side-nam">🤵 Nhà trai</button><button type="button" id="lcln-side-gai">👰 Nhà gái</button></div><div id="lcln-m4">Đang sửa: Nhà trai</div></div>
+        <div class="lcln-it" id="lcln-m1">🖼️ Thêm / quản lý ảnh</div>
+        <div class="lcln-it" id="lcln-m2">🎵 Đổi nhạc mp3</div>
+        <div class="lcln-it" id="lcln-m3">♻️ Reset</div>
+        <div class="lcln-it" id="lcln-components">🧩 Thư viện giao diện bằng code</div>
+        <div class="lcln-it" id="lcln-album">🖼️ Album ảnh</div>
+        <div class="lcln-it" id="lcln-security">🔐 Bảo mật Client</div>
+        <div class="lcln-it" id="lcln-logout">🚪 Đăng xuất Admin</div>
+      </div>
+      <div id="lcln-bar">
+        Chữ <input type="color" id="lcln-c" /> Nền <input type="color" id="lcln-b" />
+        Cỡ <input type="number" id="lcln-fs" min="8" max="120" style="width:56px" />
+        <button id="lcln-cl">Xoá style</button>
+        <select id="lcln-fx" title="Kiểu hiện khi cuộn tới">
+          <option value="">✨ Hiệu ứng: tự động</option><option value="none">Không hiệu ứng</option>
+          <option value="up">Trượt lên</option><option value="down">Trượt xuống</option>
+          <option value="left">Bay từ trái</option><option value="right">Bay từ phải</option>
+          <option value="zoom">Phóng to dần</option><option value="swoop-l">Lượn vào (trái)</option>
+          <option value="swoop-r">Lượn vào (phải)</option><option value="fade">Mờ dần</option>
+        </select>
+        <select id="lcln-fxs" title="Tốc độ"><option value="">Vừa</option><option value="fast">Nhanh</option><option value="slow">Chậm</option></select>
+        <button id="lcln-fxp">▶ Xem thử</button>
+      </div>
+      <div id="lcln-ov"></div>
+      <div id="lcln-toast"></div>
+    </div>
+    <script src="/admin/admin.js"></script>
+  </body>
+</html>
